@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.showcaseportfolio.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_sifi"
+        android:name="com.example.showcaseportfolio.ui.SifiFragment"
+        android:label="SciFi Name Generator"
+        tools:layout="@layout/fragment_sifi" />
+
+    <fragment
+        android:id="@+id/nav_MadLib"
+        android:name="com.example.showcaseportfolio.ui.MadLibFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_madlib" />
+    <fragment
+        android:id="@+id/nav_GAN"
+        android:name="com.example.showcaseportfolio.ui.GanFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_gan" />
+</navigation>

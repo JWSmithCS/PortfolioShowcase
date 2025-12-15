@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#00BCD4"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guess A Number!"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:paddingBottom="20dp"/>
+
+
+        <ImageView
+            android:id="@+id/gameImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="20dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/strikesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_background"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Strikes: 10"
+                android:textSize="18sp"
+                android:paddingRight="30dp"/>
+
+            <TextView
+                android:id="@+id/scoreText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/rounded_background"
+                android:text="Score: 0"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:background="@drawable/rounded_background"
+            android:id="@+id/feedbackText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter a guess to begin."
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"/>
+
+
+        <EditText
+            android:id="@+id/guessInput"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter number"
+            android:inputType="number"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:background="@drawable/rounded_background"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/guessButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#00BCD4"
+            android:text="Guess!"
+            android:layout_marginBottom="20dp"/>
+
+
+        <Button
+            android:id="@+id/newGameButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="#00BCD4"
+            android:text="New Game"/>
+    </LinearLayout>
+</ScrollView>
